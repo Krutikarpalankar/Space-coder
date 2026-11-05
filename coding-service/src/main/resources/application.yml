@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: coding-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/spacecoder_coding?createDatabaseIfNotExist=true
+    username: root
+    password: Nn2131923@
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+   
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+judge0:
+   base-url: https://ce.judge0.com
